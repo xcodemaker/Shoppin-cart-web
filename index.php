@@ -27,12 +27,12 @@ if(isset($_SESSION["uid"])){
 <link href='//fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 <link href='//fonts.googleapis.com/css?family=Noto+Sans:400,700' rel='stylesheet' type='text/css'>
 </head>
-<body style="background-color: rgb(18, 12, 12) ;">
+<body style="">
 
 
 <?php include "navbar.php";?>
 
-<!-- ----------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+
 <div class="carousel fade-carousel slide background-carousel" data-ride="carousel" data-interval="4000" id="bs-carousel" >
   <!-- Overlay -->
   <!-- <div class="overlay"></div>-->
@@ -62,8 +62,11 @@ Buy, Learn, Make, Develop your Project with Arduino and Raspberry PI</h3>
     </div>
     </div>
   </div>
-    <div class="item slides active">
+   <div class="item slides active">
+    <div id='container'>
+    <div class="overlay"></div>
       <div class="slide-1"></div>
+      </div>
       <div class="hero">
         <hgroup>
             <h1>We are creative</h1>        
@@ -73,7 +76,10 @@ Buy, Learn, Make, Develop your Project with Arduino and Raspberry PI</h3>
       </div>
     </div>
     <div class="item slides">
+     <div id='container'>
+    <div class="overlay"></div>
       <div class="slide-2"></div>
+      </div>
       <div class="hero">        
         <hgroup>
             <h1>We are smart</h1>        
@@ -83,7 +89,10 @@ Buy, Learn, Make, Develop your Project with Arduino and Raspberry PI</h3>
       </div>
     </div>
     <div class="item slides">
+     <div id='container'>
+    <div class="overlay"></div>
       <div class="slide-3"></div>
+      </div>
       <div class="hero">        
         <hgroup>
             <h1>We are amazing</h1>        

@@ -1,5 +1,6 @@
 <?php
 include "connect.php";
+//echo "hey";
 $fname=$_POST["Firstname"];
 $lname=$_POST["Lastname"];
 $password=md5($_POST["Password"]);
@@ -8,7 +9,8 @@ $repassword=md5($_POST["Confirm_Password"]);
  $name="/^[a-zA-Z ]*$/";
  $number="/^[0-9]+$/";
 $email = $_POST["Email"];
- if(strcmp($_POST["Firstname"],"Firstname")&&strcmp($_POST["Lastname"],"Lastname")&&strcmp($_POST["Email"],"Email")&&strcmp($_POST["Password"],"Password")&&strcmp($_POST["Address1"],"Address1")){
+$type=$_POST["type"];
+ if(strcmp($_POST["Firstname"],"Firstname")&&strcmp($_POST["Lastname"],"Lastname")&&strcmp($_POST["Email"],"Email")&&strcmp($_POST["Password"],"Password")&&strcmp($_POST["Address"],"Address")){
     		
     		if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
       $emailErr = "
@@ -101,8 +103,8 @@ $email = $_POST["Email"];
             </div>";
     exit();
     } 
-     $sql = "INSERT INTO user_info (first_name, last_name, email,password,mobile,address1,address2)
- VALUES ('".$_POST["Firstname"]."','". $_POST["Lastname"]."','". $_POST["Email"]."','".$password."','". $_POST["Mobile"]."','". $_POST["Address1"]."','". $_POST["Address2"]."')";
+     $sql = "INSERT INTO user_info (first_name, last_name, email,password,mobile,address1,type)
+ VALUES ('".$_POST["Firstname"]."','". $_POST["Lastname"]."','". $_POST["Email"]."','".$password."','". $_POST["Mobile"]."','". $_POST["Address"]."','". $_POST["type"]."')";
   if ($conn->query($sql) === TRUE) {
  
  	echo "truesignup";

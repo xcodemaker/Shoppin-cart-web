@@ -18,7 +18,7 @@
 <link href='//fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 <link href='//fonts.googleapis.com/css?family=Noto+Sans:400,700' rel='stylesheet' type='text/css'>
 </head>
-<body style="background-color: rgb(18, 12, 12) ;">
+<body style="">
 <?php include "navbar.php";?> 
 <!--banner-->
 <div class="banner-top">
@@ -29,7 +29,14 @@
 	</div>
 </div>
 <!--login-->
-
+<div class='row'>
+<div class='col-md-2'></div>
+	<div class='col-md-8'>
+	<div id="loginmsg">
+    					
+    		</div>
+    		</div>
+<div class='col-md-2'style="margin-bottom:20px;"></div>
 	<div class="login">
 	
 		<div class="main-agileits">
@@ -50,7 +57,7 @@
 					</form>
 				</div>
 				<div class="forg">
-					<a href="#" class="forg-left">Forgot Password</a>
+					<a href="#" class="forg-left" id="forgotbtn">Forgot Password</a>
 					<a href="register.php" class="forg-right">Register</a>
 				<div class="clearfix"></div>
 				</div>

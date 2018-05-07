@@ -23,7 +23,7 @@
                     <input type='hidden' name='csrfmiddlewaretoken' value='XFe2rTYl9WOpV8U6X5CfbIuOZOELJ97S' /> -->
                             
 
-                    <form  class="form-horizontal" id="#idForm" enctype="multipart/form-data" method="post"  action="">
+                    <form  class="form-horizontal" id="idForm" enctype="multipart/form-data" method="post"  action="">
                         
                        
                   
@@ -110,8 +110,8 @@
 include "connect.php";
 
 $imgname=$_FILES['fileToUpload']['name'];
-	 $sql = "INSERT INTO products ( product_cat, Product_brand,product_title,product_price,product_desc,product_image,product_keywords)
- VALUES ('". $_POST["product_cat"]."','". $_POST["Product_brand"]."','". $_POST["product_title"]."','". $_POST["product_price"]."','". $_POST["product_desc"]."','".$imgname."','".$_POST["product_keywords"]."')";
+	 $sql = "INSERT INTO products ( product_cat, Product_brand,product_title,product_price,product_desc,product_image,product_keywords,total_qty)
+ VALUES ('". $_POST["product_cat"]."','". $_POST["Product_brand"]."','". $_POST["product_title"]."','". $_POST["product_price"]."','". $_POST["product_desc"]."','".$imgname."','".$_POST["product_keywords"]."','".$_POST["product_qty"]."')";
 
  if ($conn->query($sql) === TRUE) {
     echo "New record created successfully";
@@ -121,25 +121,61 @@ $imgname=$_FILES['fileToUpload']['name'];
 	
 $target_dir = "images";
 $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
-// echo $target_file ;
-// $uploadOk = 1;
+
 $imgtemp=$_FILES["fileToUpload"]["tmp_name"];
 move_uploaded_file($imgtemp,"images/".$_FILES['fileToUpload']['name']);
-// $imageFileType = pathinfo($target_file,PATHINFO_EXTENSION);
-// Check if image file is a actual image or fake image
-// if(isset($_POST["submit"])) {
-//     $check = getimagesize($_FILES["fileToUpload"]["tmp_name"]);
-//     if($check !== false) {
-//         echo "File is an image - " . $check["mime"] . ".";
-//         $uploadOk = 1;
-//     } else {
-//         echo "File is not an image.";
-//         $uploadOk = 0;
-//     }
-
 
 ?>
 });
+      $(document).ready(function(){
+  
+      $("body").delegate("#productupdate","submit",function(event){
+   
+alert("hello");
+    event.preventDefault();
+   //var key= $("#searchinput").val();
+   //alert(key);
+   <?php
+//  $search=$_POST["search"];
+//  echo    $search; 
+//  $product_cat=$_POST["product_cat"];
+//  $Product_brand=$_POST["Product_brand"];
+//  $product_title=$_POST["product_title"];
+//  $product_price=$_POST["product_price"];
+//  $product_desc=$_POST["product_desc"];
+//  $product_image=$_FILES['fileToUpload']['name'];
+//  $product_keywords=$_POST["product_keywords"];
+//  //echo $product_id;
+//  if($product_image!=""){
+//    $sql = "UPDATE  products
+//  SET  product_cat='$product_cat', Product_brand=' $Product_brand',product_title=' $product_title',product_price='$product_price',product_desc='$product_desc',product_image='$product_image',product_keywords='$product_keywords' where product_id='$search'";
+
+//  if ($conn->query($sql) === TRUE) {
+//     echo "New record created successfully";
+//  } else {
+//      echo "Error: " . $sql . "<br>" . $conn->error;
+//  }
+// }else{
+//   $sql = "UPDATE  products
+//  SET  product_cat='$product_cat', Product_brand=' $Product_brand',product_title=' $product_title',product_price='$product_price',product_desc='$product_desc',product_keywords='$product_keywords' where product_id='$search'";
+
+//  if ($conn->query($sql) === TRUE) {
+//     echo "New record created successfully";
+//  } else {
+//      echo "Error: " . $sql . "<br>" . $conn->error;
+//  }
+// }
+    //       $.ajax({
+    //   url : "actionadmin.php",
+    //   method :"POST",
+    //   data : $("#formupdate").serialize(),
+    //   success : function(data){ 
+    //   $("#adminupdate").html(data); 
+    //   }
+    // });
+ ?>
+});
+    })
     </script>           
 </body>
 </html>

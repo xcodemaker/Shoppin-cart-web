@@ -18,7 +18,7 @@
 <link href='//fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 <link href='//fonts.googleapis.com/css?family=Noto+Sans:400,700' rel='stylesheet' type='text/css'>
 </head>
-<body style="background-color: rgb(18, 12, 12) ;">
+<body style="">
 <?php include "navbar.php";?>
 <div class="banner-top">
 	<div class="container">

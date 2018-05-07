@@ -14,7 +14,7 @@ else{
 	echo "success";
 }
 
- // echo isset($_POST["product_id"]);
+
  $product_id=$_POST["product_id"];
  $product_cat=$_POST["product_cat"];
  $Product_brand=$_POST["Product_brand"];
@@ -32,15 +32,6 @@ else{
  } else {
      echo "Error: " . $sql . "<br>" . $conn->error;
  }
-	// $run_query=mysqli_query($conn,$category_query);
-	// echo "<ul>";
-	// if(mysqli_num_rows($run_query)>0){
-	// 	while ($row=mysqli_fetch_array($run_query)) {
-	// 		$cid=$row["cat_id"];
-	// 		$cat_name=$row["cat_title"];
-	// 		echo "<li><a href='#0'>$cat_name</a></li>";
-	// 	}
-	// 	echo "</ul> ";
-	// }
+	
 
 ?>

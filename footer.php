@@ -4,19 +4,15 @@
 	<div class="container">
 		<div class="col-md-3 footer-grid">
 			<h3>About Us</h3>
-			<p>Nam libero tempore, cum soluta nobis est eligendi 
-				optio cumque nihil impedit quo minus id quod maxime 
-				placeat facere possimus.</p>
+			<p>Shopme.com is Sri Lanka s leading online web site for selling electronic items for research and education purposes. It was created in early 2014 by DSK Technology. Since then we’ve launched many new products and we’re always busy creating more, following the Open Source principles of sharing our designs to let other people build on our work just as we’ve built on the work of others.</p>
 		</div>
 		<div class="col-md-3 footer-grid ">
 			<h3>Menu</h3>
 			<ul>
 				<li><a href="index.php">Home</a></li>
-				<li><a href="kitchen.php">Kitchen</a></li>
-				<li><a href="care.php">Personal Care</a></li>
-				<li><a href="hold.php">Household</a></li>						 
-				<li><a href="codes.php">Short Codes</a></li> 
-				<li><a href="contact.php">Contact</a></li>
+				<li><a href="login.php">Login</a></li>
+				<li><a href="register.php">Register</a></li>
+				
 			</ul>
 		</div>
 		<div class="col-md-3 footer-grid ">
@@ -41,8 +37,8 @@
 		</div>
 		<div class="clearfix"></div>
 			<div class="footer-bottom">
-				<h2 ><a href="index.php"><b>T<br>H<br>E</b>Big Store<span>The Best Supermarket</span></a></h2>
-				<p class="fo-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
+				<h2 ><a href="index.php"><b>T<br>H<br>E</b>Shop Me<span>The Best microcontrollers</span></a></h2>
+				<p class="fo-para">Join us in our mission to empower tech geeks and innovators around the Sri Lanka</p>
 				<ul class="social-fo">
 					<li><a href="#" class=" face"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
 					<li><a href="#" class=" twi"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
@@ -51,20 +47,20 @@
 				</ul>
 				<div class=" address">
 					<div class="col-md-4 fo-grid1">
-							<p><i class="fa fa-home" aria-hidden="true"></i>12K Street , 45 Building Road Canada.</p>
+							<p><i class="fa fa-home" aria-hidden="true"></i>A249/3 Edurapotha, Dewalegama, kegalle.</p>
 					</div>
 					<div class="col-md-4 fo-grid1">
 							<p><i class="fa fa-phone" aria-hidden="true"></i>+1234 758 839 , +1273 748 730</p>	
 					</div>
 					<div class="col-md-4 fo-grid1">
-						<p><a href="mailto:info@example.com"><i class="fa fa-envelope-o" aria-hidden="true"></i>info@example1.com</a></p>
+						<p><a href="mailto:info@example.com"><i class="fa fa-envelope-o" aria-hidden="true"></i>shopeme@gmail.com</a></p>
 					</div>
 					<div class="clearfix"></div>
 					
 					</div>
 			</div>
 		<div class="copy-right">
-			<p> &copy; 2016 Big store. All Rights Reserved | Design by  <a href="http://w3layouts.com/"> W3layouts</a></p>
+			<p> &copy; 2017 Shope Me. All Rights Reserved | Design by dhammika </p>
 		</div>
 	</div>
 </div>
